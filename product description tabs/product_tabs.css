@@ -1,0 +1,15 @@
+#product_tabs > ul {
+  list-style: none;
+  margin: 0;
+}
+#product_tabs > ul > li {
+  display: inline-block;
+  border: 1px solid;
+  padding: 10px;
+}
+#product_tabs > ul > li h4 {
+  margin: 0;
+}
+#product_tabs > ul > li.ui-tabs-active {
+  background: #ddd;
+}

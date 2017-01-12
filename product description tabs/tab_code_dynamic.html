@@ -1,0 +1,36 @@
+<div id="product_tabs">
+  <ul>
+    <li class="tab_1"><a href="#tabs-1"><h4>Tab 1 Title</h4></a></li>
+    <li class="tab_2"><a href="#tabs-2"><h4>Tab 2 Title</h4></a></li>
+    <li class="tab_3"><a href="#tabs-3"><h4>Tab 3 Title</h4></a></li>
+    <li class="tab_4"><a href="#tabs-4"><h4>Tab 4 Title</h4></a></li>
+  </ul>
+  <div id="tabs-1">
+    {% if product.description contains '<!-- split -->' %} 
+      {{ description[0] }} 
+    {% else %} 
+      {{ product.description }}
+    {% endif %}
+  </div>
+  <div id="tabs-2">
+    {% if product.description contains '<!-- split -->' %} 
+      {{ description[1] }}
+    {% else %}
+      <p>No Content</p>
+    {% endif %} 
+  </div>
+  <div id="tabs-3">
+    {% if product.description contains '<!-- split -->' %} 
+      {{ description[2] }}
+    {% else %}
+      <p>No Content</p>
+    {% endif %} 
+  </div>
+  <div id="tabs-4">
+    {% if product.description contains '<!-- split -->' %} 
+      {{ description[3] }}
+    {% else %}
+      <p>No Content</p>
+    {% endif %} 
+  </div>
+</div>
